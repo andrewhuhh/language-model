@@ -12,8 +12,8 @@ def load_data(file_path):
     return text.lower()
 
 # Replace with your training file (.txt format)
-minishake = "C:\\Users\\ananh\\Desktop\\code\\ML\\minishake.txt"
-andrew = "C:\\Users\\ananh\\Desktop\\code\\ML\\sampletxt.txt"
+minishake = "training_data\\minishake.txt"
+andrew = "training_data\\sampletxt.txt"
 text = load_data(andrew)
 
 # Create the character mapping dictionaries:
@@ -21,7 +21,7 @@ unique_chars = sorted(list(set(text)))
 char_to_idx = {ch: idx for idx, ch in enumerate(unique_chars)}
 idx_to_char = {idx: ch for idx, ch in enumerate(unique_chars)}
 
-# Define the RNN model:
+# Define the RNN (recurrent neural net) model:
 class CharRNN(nn.Module):
     def __init__(self, input_size, hidden_size, output_size, n_layers=1):
         super(CharRNN, self).__init__()
