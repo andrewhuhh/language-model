@@ -12,7 +12,7 @@ def load_data(file_path):
 # Training data file (.txt format)
 minishake = "training_data\\minishake.txt"
 andrew = "training_data\\sampletxt.txt"
-text = load_data(andrew)
+text = load_data(minishake)
 
 # Create the character mapping dictionaries:
 unique_chars = sorted(list(set(text)))
