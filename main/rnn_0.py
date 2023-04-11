@@ -2,8 +2,6 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-import random
-import string
 
 # Load and preprocess data
 def load_data(file_path):
@@ -11,7 +9,7 @@ def load_data(file_path):
         text = f.read()
     return text.lower()
 
-# Replace with your training file (.txt format)
+# Training data file (.txt format)
 minishake = "training_data\\minishake.txt"
 andrew = "training_data\\sampletxt.txt"
 text = load_data(andrew)
