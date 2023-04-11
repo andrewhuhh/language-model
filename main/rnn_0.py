@@ -47,7 +47,7 @@ hidden_size = 512
 output_size = len(unique_chars)
 n_layers = 1
 seq_length = 150
-learning_rate = 0.001
+learning_rate = 0.005
 batch_size = 64
 n_epochs = 20
 
