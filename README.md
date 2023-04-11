@@ -1,2 +1,2 @@
-# language-model
+# language-model-modeling
 Experimenting with language model architecture and training
