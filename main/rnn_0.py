@@ -49,7 +49,7 @@ n_layers = 1
 seq_length = 150
 learning_rate = 0.005
 batch_size = 64
-n_epochs = 20
+n_epochs = 50
 
 model = CharRNN(input_size, hidden_size, output_size, n_layers)
 criterion = nn.CrossEntropyLoss()
